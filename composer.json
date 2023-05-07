@@ -1,0 +1,15 @@
+{
+    "require": {
+        "tightenco/jigsaw": "^1.6",
+        "samdark/sitemap": "^2.2.1"
+    },
+    "scripts": {
+        "dev": ["vendor/bin/jigsaw serve --port=8080"],
+        "build": ["vendor/bin/jigsaw build production"]
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\Listeners\\": "listeners/"
+        }
+    }
+}
